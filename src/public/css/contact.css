@@ -161,7 +161,7 @@ form.form_contact textarea{
 @media screen and (min-width:1300px) {
     .form_wrap{
         width: 25%;
-        height: 560px;
+        height: 580px;
         margin: 10px auto;
         display: flex; 
     }
