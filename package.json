@@ -1,0 +1,21 @@
+{
+  "name": "first-web-site",
+  "version": "1.0.0",
+  "description": "Web Application on computer repair services",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon src"
+  },
+  "author": "Angelo Paredes",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
