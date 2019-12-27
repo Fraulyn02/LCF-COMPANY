@@ -49,7 +49,7 @@ let transporter = nodemailer.createTransport({
    
 })
 
-console.log(process.env.EMAIL_USER)
+
 
 
 module.exports = router;
