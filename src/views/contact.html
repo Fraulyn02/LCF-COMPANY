@@ -11,6 +11,7 @@
 
 <body>
     <%- include('partials/nav.html') %>
+    
     <section class="form_wrap animated fadeInDown">
 
         <section class="cantact_info">
@@ -43,10 +44,65 @@
         </form>
     </section>
 
-    <%- include('partials/footer.html') %>
-    <script src="js/contact.js"></script>
-</body>
 
+
+    <%- include('partials/footer.html') %>
+   
+<script>
+    console.log('Working...')
+
+const email = document.getElementById('email');
+const message = document.getElementById('mensaje');
+const name = document.getElementById('name');
+const phone = document.getElementById('phone');
+const btnSend = document.getElementById('btnSend');
+
+
+function eventListener(){
+    document.addEventListener('DOMContentLoaded', inicioApp)
+    email.addEventListener('blur', validate);
+    message.addEventListener('blur', validate)
+    phone.addEventListener('blur', validate)
+    name.addEventListener('blur', validate)
+
+} eventListener();
+
+function inicioApp(){
+    btnSend.disabled = true;
+    btnSend.style.background = '#C0C0C0'
+}
+function validate(){
+    validatelength(this);
+    
+    if(this.type === 'email'){
+        validateEmail(this)
+        }
+    }
+
+    if(email.value !== ''  && phone.value !== '' && name.value !== ''){
+        btnSend.disabled = false;
+        btnSend.style.background = 'rgb(56, 207, 94)';
+    }
+
+function validatelength(campo){
+    if(campo.value.length > 0){
+        campo.style.borderBottom = '1px solid green';
+    }else{
+        campo.style.borderBottom = '1px solid red';
+    }
+}
+function validateEmail(campo){
+    const typeEmail = campo.value;
+
+    if(typeEmail.indexOf('@') !== -1){
+        campo.style.borderBottom = '1px solid green';
+    }else{
+        campo.style.borderBottom = '1px solid red'
+    }
+
+}
+
+</script>
 </html>
 
 
