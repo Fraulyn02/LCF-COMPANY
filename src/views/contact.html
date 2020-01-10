@@ -60,6 +60,7 @@ const btnSend = document.getElementById('btnSend');
 
 function eventListener(){
     document.addEventListener('DOMContentLoaded', inicioApp)
+    
     email.addEventListener('blur', validate);
     message.addEventListener('blur', validate)
     phone.addEventListener('blur', validate)
@@ -77,13 +78,14 @@ function validate(){
     if(this.type === 'email'){
         validateEmail(this)
         }
-    }
+
 
     if(email.value !== ''  && phone.value !== '' && name.value !== ''){
         btnSend.disabled = false;
         btnSend.style.background = 'rgb(56, 207, 94)';
+        
     }
-
+}
 function validatelength(campo){
     if(campo.value.length > 0){
         campo.style.borderBottom = '1px solid green';
