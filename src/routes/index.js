@@ -3,6 +3,7 @@ const router = Router();
 const nodemailer = require('nodemailer');
 require ('dotenv').config();
 
+
 router.get('/', (req, res) => {
     res.render('index.html', {title: 'LCF COMPANY'})
 });
