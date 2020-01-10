@@ -1,7 +1,7 @@
  /* FORMULARIO =================================== */
   
  .form_wrap{
-    width: 1050px;
+    width: 500px;
     height: 530px;
     margin: 50px auto;
     display: flex;
@@ -13,82 +13,13 @@
 }
 
 
-/* Informacion de Contacto*/
-
-.cantact_info::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    background: #575B57;
-    opacity: 0.9;
-}
-
-.cantact_info{
-    width: 38%;
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    
-  
-}
-
-.info_title,
-.info_items{
-    position: relative;
-    z-index: 2;
-    color: #fff;
-}
-
-.info_title{
-    margin-bottom: 60px;
-}
-
-.info_title span{
-    font-size: 100px;
-    display: block;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.info_title h2{
-    font-size: 35px;
-    text-align: center;
-}
-
-.info_items p{
-    display: flex;
-    align-items: center;
-
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.info_items p:nth-child(1) span{
-    font-size: 30px;
-    margin-right: 10px;
-}
-
-.info_items p:nth-child(2) span{
-    font-size: 40px;
-    margin-right: 15px;
-    margin-left: 4px;
-}
 
 
 /* Formulario de contacto*/
 form.form_contact{
-    width: 62%;
+    width: 100%;
     padding: 30px 40px;
+    
 }
 
 form.form_contact h2{
@@ -107,7 +38,7 @@ form.form_contact label{
     font-weight: 600;
 }
 
-form.form_contact input,
+form.form_contact input[type="text"],input[type="email"],input[type="number"],
 form.form_contact textarea{
     
     width: 100%;
@@ -130,31 +61,10 @@ form.form_contact textarea{
     max-height: 90px;
 }
 
-form.form_contact input[type="submit"]{
-    width: 180px;
-    background: rgb(56, 207, 94);
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
-    align-self: flex-end;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-  
-}
 
-form.form_contact input[type="submit"]:hover{
-    background: #37AF37;
-    -webkit-box-shadow: 2px 16px 38px -17px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 16px 38px -17px rgba(0,0,0,0.75);
-box-shadow: 2px 16px 38px -17px rgba(0,0,0,0.75);
-}
-input:focus, input.form_contact:focus, input[type='text']:focus{
 
-    outline:none !important;
-    outline-width: 0 !important;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
+
+.herra{
+    display: flex;
+    justify-content: center;
 }

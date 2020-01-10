@@ -13,7 +13,7 @@
     <%- include('partials/nav.html') %>
     
     <section class="form_wrap animated fadeInDown">
-
+<!--
         <section class="cantact_info">
             <section class="info_title">
                 <span class="fa fa-user-circle"></span>
@@ -24,9 +24,9 @@
                 <p><span class="fab fa-whatsapp"></span> +1(829) 212-5312</p>
             </section>
         </section>
-
+    -->
         <form action="/contact" method="post" class="form_contact">
-            <h5>Permita que le contactemos para recomendar una solución acorde a sus necesidades.</h5>
+            <i class="fad fa-tools fa-5x herra"></i>
             <div class="user_info">
 
                 <input type="text" placeholder="Nombre" name="name" autofocus required id="name">
@@ -39,7 +39,7 @@
                 <textarea required placeholder="Detalles del servicio que solicita:" name="message"
                     id="mensaje"></textarea>
 
-                <input type="submit" value="Enviar Mensaje" id="btnSend">
+                <input type="submit"  value="Enviar Mensaje" id="btnSend">
             </div>
         </form>
     </section>
@@ -70,7 +70,7 @@ function eventListener(){
 
 function inicioApp(){
     btnSend.disabled = true;
-    btnSend.style.background = '#C0C0C0'
+    btnSend.className = 'btn btn-secondary'
 }
 function validate(){
     validatelength(this);
@@ -82,7 +82,7 @@ function validate(){
 
     if(email.value !== ''  && phone.value !== '' && name.value !== ''){
         btnSend.disabled = false;
-        btnSend.style.background = 'rgb(56, 207, 94)';
+        btnSend.className = 'btn btn-success';
         
     }
 }
