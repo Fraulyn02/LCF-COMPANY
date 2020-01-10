@@ -184,7 +184,11 @@ body { /*
 box-shadow: 2px 16px 38px -17px rgba(0,0,0,0.75);
   }
   
-  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
   
   
 
