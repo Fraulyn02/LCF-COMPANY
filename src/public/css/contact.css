@@ -1,7 +1,7 @@
  /* FORMULARIO =================================== */
   
  .form_wrap{
-    width: 500px;
+    width: 40%;
     height: 530px;
     margin: 50px auto;
     display: flex;
@@ -9,10 +9,8 @@
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
 }
-
-
 
 
 /* Formulario de contacto*/
@@ -68,3 +66,22 @@ form.form_contact textarea{
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width:812px) {
+    .form_wrap{
+        width: 90%;
+        height: 530px;
+        margin: 50px auto;
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+

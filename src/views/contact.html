@@ -49,14 +49,12 @@
     <%- include('partials/footer.html') %>
    
 <script>
-    console.log('Working...')
-
+    
 const email = document.getElementById('email');
 const message = document.getElementById('mensaje');
 const name = document.getElementById('name');
 const phone = document.getElementById('phone');
 const btnSend = document.getElementById('btnSend');
-
 
 function eventListener(){
     document.addEventListener('DOMContentLoaded', inicioApp)
@@ -72,6 +70,8 @@ function inicioApp(){
     btnSend.disabled = true;
     btnSend.className = 'btn btn-secondary'
 }
+
+//validate Form
 function validate(){
     validatelength(this);
     
