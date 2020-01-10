@@ -1,7 +1,7 @@
  /* FORMULARIO =================================== */
   
  .form_wrap{
-    width: 40%;
+    width: 20%;
     height: 530px;
     margin: 50px auto;
     display: flex;
@@ -77,8 +77,15 @@ form.form_contact textarea{
 }
 
 @media screen and (min-width:1300px) {
-    
+    .form_wrap{
+        width: 25%;
+        height: 530px;
+        margin: 20px auto;
+        display: flex;
+        
+    }
     .footer{
+        width: 100%;
         position: absolute;
         bottom: 0;
     }
