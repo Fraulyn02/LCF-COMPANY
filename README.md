@@ -9,5 +9,5 @@ NOW is the time to work with the backend while I learn on the road
 ![image](https://user-images.githubusercontent.com/52179030/71326872-1a895d80-24d7-11ea-88aa-b84866379117.png)
 ![image](https://user-images.githubusercontent.com/52179030/71326882-3987ef80-24d7-11ea-9ac7-0e044fe9b3c6.png)
 
+![Captura de pantalla 2020-01-10 a la(s) 7 31 47 p  m](https://user-images.githubusercontent.com/52179030/72193431-dc010780-33df-11ea-8a57-6265f9a31b0a.png)
 
-![Captura de pantalla 2020-01-10 a la(s) 7 16 20 p  m](https://user-images.githubusercontent.com/52179030/72192923-cc80bf00-33dd-11ea-94ed-259756efc9ca.png)
