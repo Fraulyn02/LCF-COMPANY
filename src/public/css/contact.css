@@ -12,14 +12,12 @@
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
 }
 
-
 /* Formulario de contacto*/
 form.form_contact{
     width: 100%;
     padding: 30px 40px;
     
 }
-
 form.form_contact h2{
     font-size: 25px;
     font-weight: 600;
@@ -52,15 +50,11 @@ form.form_contact textarea{
    
 }
 
-
 form.form_contact textarea{
     max-width: 100%;
     min-width: 100%;
     max-height: 90px;
 }
-
-
-
 
 .herra{
     display: flex;

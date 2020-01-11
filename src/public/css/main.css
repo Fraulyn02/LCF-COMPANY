@@ -27,13 +27,7 @@ body {
 .card:hover {
     transform: scale(1.1);
 }
-@media screen and (min-width:1024px) {
-   
-    .footer{
-        position: relative;
-        bottom: 0;
-    }
-}
+
  
   
  
