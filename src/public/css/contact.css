@@ -2,7 +2,7 @@
   
  .form_wrap{
     width: 30%;
-    height: 530px;
+    height: 580px;
     margin: 50px auto;
     display: flex;
 
@@ -64,19 +64,18 @@ form.form_contact textarea{
 @media screen and (max-width:812px) {
     .form_wrap{
         width: 90%;
-        height: 530px;
+        height: 590px;
         margin: 50px auto;
         display: flex;
     }
+    
 }
-
 @media screen and (min-width:1300px) {
     .form_wrap{
         width: 20%;
-        height: 530px;
+        height: 580px;
         margin: 20px auto;
-        display: flex;
-        
+        display: flex; 
     }
     .footer{
         width: 100%;
@@ -84,5 +83,4 @@ form.form_contact textarea{
         bottom: 0;
     }
 }
-
 

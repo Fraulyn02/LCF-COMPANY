@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 router.get('/contact', (req, res, next) => {
     res.render('contact.html', {title: 'LCF CONTACTS'})
 });
-router.post('/contact', async(req, res, next) => {
+router.post('/contact', async (req, res, next) => {
     
 let transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -45,7 +45,7 @@ let transporter = nodemailer.createTransport({
     }
   });
    
-   res.redirect('/');
+   
    console.log(req.body)
    
 })

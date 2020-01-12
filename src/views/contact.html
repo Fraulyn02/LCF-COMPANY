@@ -14,8 +14,9 @@
     
     <section class="form_wrap animated fadeInDown">
 
-        <form action="/contact" method="post" class="form_contact">
+        <form action="/contact" method="post" class="form_contact"id="form">
             <i class="far fa-inbox-in fa-5x herra"></i>
+            <h5 class="text-center mt-3">Contact Us</h5>
             <div class="user_info">
 
                 <input type="text" placeholder="Nombre" name="name" autofocus required id="name">
@@ -28,7 +29,7 @@
                 <textarea required placeholder="Detalles del servicio que solicita:" name="message"
                     id="mensaje"></textarea>
 
-                <input type="submit"  value="Send" id="btnSend">
+                <input type="submit" class="btn btn-success" value="Send" id="btnSend">
             </div>
         </form>
     </section>
@@ -56,8 +57,8 @@ function eventListener(){
 } eventListener();
 
 function inicioApp(){
-    btnSend.disabled = true;
-    btnSend.className = 'btn btn-secondary'
+    
+    btnSend.className = 'btn btn-success'
 }
 
 //validate Form
