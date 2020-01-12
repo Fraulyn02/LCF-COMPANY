@@ -45,7 +45,7 @@ let transporter = nodemailer.createTransport({
     }
   });
    
-   
+   res.redirect('/');
    console.log(req.body)
    
 })
