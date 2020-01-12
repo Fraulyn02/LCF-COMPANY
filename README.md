@@ -4,7 +4,7 @@ This is my first web application where I apply what I learn about JS, Node, expr
 The frontend application is almost finished using a template engine for HTML and bootstrap for CSS
 NOW is the time to work with the backend while I learn on the road.
 
-On the server side is running node with express and the form with a module called nodemailer that sends the information to my email
+On the server side is running node with express and the form using a module called nodemailer that sends the information to my email
 
 # Screenshot
 
