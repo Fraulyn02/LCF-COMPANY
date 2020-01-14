@@ -43,9 +43,14 @@ let transporter = nodemailer.createTransport({
     } else {
       console.log('Email sent: ' + info.response);
     }
+    
   });
-   
-   res.redirect('/');
+ 
+
+ setTimeout(() => {
+   res.redirect('/')
+    },3000);
+
    console.log(req.body)
    
 })

@@ -29,13 +29,13 @@
                 <textarea required placeholder="Detalles del servicio que solicita:" name="message"
                     id="mensaje"></textarea>
 
-                <input type="submit" class="btn btn-success" value="Send" id="btnSend">
+                <input type="submit" class="btn btn-success" data-toggle="modal" data-target="#ma-modal" value="Send" id="btnSend">
             </div>
         </form>
     </section>
-
-
-
+   
+      
+      <div id="pr"></div>
     <%- include('partials/footer.html') %>
    
 <script>
@@ -47,7 +47,7 @@ const phone = document.getElementById('phone');
 const btnSend = document.getElementById('btnSend');
 
 function eventListener(){
-    document.addEventListener('DOMContentLoaded', inicioApp)
+    
     
     email.addEventListener('blur', validate);
     message.addEventListener('blur', validate)
@@ -56,10 +56,24 @@ function eventListener(){
 
 } eventListener();
 
-function inicioApp(){
-    
-    btnSend.className = 'btn btn-success'
-}
+btnSend.addEventListener('click', () => {
+    const pr = document.getElementById('pr')
+    const div = document.createElement('div');
+        div.innerHTML = `<div class="modal fade" id="ma-modal" tabindex="-1" role="dialog" aria-labelledby="mb-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <div class="loader" id="loaded">Loading</div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        pr.appendChild(div);
+        setTimeout(() => {
+            pr.remove();
+        }, 3000);
+})
 
 //validate Form
 function validate(){
@@ -93,6 +107,7 @@ function validateEmail(campo){
     }
 
 }
+
 
 </script>
 </html>
