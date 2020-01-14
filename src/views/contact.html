@@ -35,7 +35,7 @@
     </section>
    
       
-      <div id="pr"></div>
+      <div id="modal-loading"></div>
     <%- include('partials/footer.html') %>
    
 <script>
@@ -57,21 +57,18 @@ function eventListener(){
 } eventListener();
 
 btnSend.addEventListener('click', () => {
-    const pr = document.getElementById('pr')
+    const modal_Loading = document.getElementById('modal-loading')
     const div = document.createElement('div');
         div.innerHTML = `<div class="modal fade" id="ma-modal" tabindex="-1" role="dialog" aria-labelledby="mb-modal" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
-                    
                     <div class="modal-body">
                         <div class="loader" id="loaded">Loading</div>
                     </div>
-                </div>
             </div>
         </div>`
-        pr.appendChild(div);
+        modal_Loading.appendChild(div);
         setTimeout(() => {
-            pr.remove();
+            modal_Loading.remove();
         }, 3000);
 })
 
