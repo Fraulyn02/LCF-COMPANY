@@ -23,7 +23,7 @@ let transporter = nodemailer.createTransport({
   
    let mailOptions = await {
     from: 'angelo.david499@gmail.com',
-    to: 'angelospotify2300@gmail.com',
+    to: 'lcfcomp4ny@gmail.com',
     subject: 'Mensaje de LCF-COMPANY',
     html: `<h2>¡Tienes una nueva notificacion de tu pagina web!</h2>
     <h3>Detalles del contacto</h3>
