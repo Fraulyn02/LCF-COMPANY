@@ -48,7 +48,6 @@ const btnSend = document.getElementById('btnSend');
 
 function eventListener(){
     
-    
     email.addEventListener('blur', validate);
     message.addEventListener('blur', validate)
     phone.addEventListener('blur', validate)
@@ -56,9 +55,14 @@ function eventListener(){
 
 } eventListener();
 
+// Evento de Circle Loading luego de enviar el Form
 btnSend.addEventListener('click', () => {
     const modal_Loading = document.getElementById('modal-loading')
     const div = document.createElement('div');
+
+//validacion de campos para que se ejecute el circulo
+    if(email.value !== '' && email.value.indexOf('@') !== -1  && phone.value !== '' && name.value !== '' && message.value !== ''){
+
         div.innerHTML = `<div class="modal fade" id="ma-modal" tabindex="-1" role="dialog" aria-labelledby="mb-modal" aria-hidden="true">
             <div class="modal-dialog">
                     <div class="modal-body">
@@ -70,6 +74,9 @@ btnSend.addEventListener('click', () => {
         setTimeout(() => {
             modal_Loading.remove();
         }, 3000);
+        
+    }
+       
 })
 
 //validate Form
@@ -80,20 +87,15 @@ function validate(){
         validateEmail(this)
         }
 
-
-    if(email.value !== ''  && phone.value !== '' && name.value !== ''){
-        btnSend.disabled = false;
-        btnSend.className = 'btn btn-success';
-        
-    }
 }
 function validatelength(campo){
-    if(campo.value.length > 0){
+    if(campo.value.length > 2){
         campo.style.borderBottom = '1px solid green';
     }else{
         campo.style.borderBottom = '1px solid red';
     }
 }
+//validacion de Email
 function validateEmail(campo){
     const typeEmail = campo.value;
 
