@@ -1,6 +1,6 @@
 body { 
     
-    background:#fff url('spiration\ dark.png');
+    background:#fff url('./img/spiration\ dark.png');
     background-repeat: repeat;
     /*background-size: cover;
     background-attachment: fixed;*/
@@ -42,7 +42,11 @@ box-shadow: 6px 14px 12px -12px rgba(69,69,69,1);
 
  
   
-
+.logo {
+    background: url('../css/img/logo.png');
+    color: red;
+    height: 232px;
+}
 
   
 

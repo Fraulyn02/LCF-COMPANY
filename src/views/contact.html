@@ -57,6 +57,7 @@ function eventListener(){
 
 // Evento de Circle Loading luego de enviar el Form
 btnSend.addEventListener('click', () => {
+    
     const modal_Loading = document.getElementById('modal-loading')
     const div = document.createElement('div');
 
@@ -71,6 +72,7 @@ btnSend.addEventListener('click', () => {
             </div>
         </div>`
         modal_Loading.appendChild(div);
+
         setTimeout(() => {
             modal_Loading.remove();
         }, 3000);
